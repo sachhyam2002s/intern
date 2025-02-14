@@ -1,0 +1,26 @@
+*{
+    margin:0%;
+}
+body{
+    background: rgb(51, 114, 51);
+    color: aqua;
+}
+h1:hover{
+    background-color: orange;
+}
+button:hover{
+    color: rgb(251, 8, 53);
+    padding: 5px;
+}
+div:first-child{
+    background-color: rgb(237, 157, 117);
+}
+h1::before{
+    content: "Start!";
+    color: rgb(51, 51, 105);
+}
+p::first-letter{
+    background-color: #8c3d3d;
+    font-size: 30px;
+    padding: 5px;
+}

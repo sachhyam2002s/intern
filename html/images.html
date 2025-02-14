@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body{
+            background-color: rgb(241, 207, 162);
+        }
+    </style>
+</head>
+<body>
+    <!-- 'unsplash.com', 'pexels.com' to get high quality images with no copyrights -->
+    <img src="https://images.pexels.com/photos/30617592/pexels-photo-30617592/free-photo-of-aerial-view-of-boat-on-tranquil-ocean-surface.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="no image" width="500px" height="400px" >
+    <!-- alwasy 'copy image address' to get link for images -->
+    <img src="./vie.jpg" alt="no image" width="500px" height="400px" >
+    <picture>
+        <source media="min-width:650px" srcset="./view.jpg"/>
+        <img src="./vie.jpg" alt="" width="500px" height="400px" >
+    </picture>
+    <!-- use picture tag to adjust media size according to device-->
+
+    <!-- an image map generator -->
+    <img src="https://plus.unsplash.com/premium_photo-1738779001459-3c2efd2f6e88?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="586,362,819,768" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="930,312,1006,516" shape="rect">
+</map>
+
+<script>
+    function one(){
+        alert("You clicked on one")
+    }
+    function two(){
+        alert("You clicked on two")
+    }
+</script>
+</body>
+</html>

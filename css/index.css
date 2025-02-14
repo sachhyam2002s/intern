@@ -1,0 +1,30 @@
+*{
+    margin:0%;
+}
+/* html{
+    background: url(https://images.pexels.com/photos/30691792/pexels-photo-30691792/free-photo-of-snowy-reflections-in-reine-norway-fjord.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+background-size: cover;
+} */
+body{
+    background-color: rgb(88, 174, 249);
+}
+h1{
+    padding: 5px;
+    margin: 5px 2px;
+    background-color: azure;
+    color: rgb(73, 160, 246);
+    text-align: center;
+    text-decoration: underline;
+    border: solid 2px black;
+}
+span{
+    display: block;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    background: brown;
+}
+p{
+    background-color: aquamarine;
+    display: inline;
+}

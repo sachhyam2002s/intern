@@ -1,0 +1,31 @@
+*{
+    margin: 0%;
+}
+body{
+    background: rgb(105, 105, 231);
+}
+h1{
+    background-color: #aea9a9;
+}
+.bg-orange{
+    background-color: orange;
+}
+#bg-green{
+    background-color: #e67b7b;
+}
+a[target="_blank"]{
+    background-color: antiquewhite;
+    padding: 2px;
+}
+h1, h2, h3{
+    background-color: blanchedalmond;
+}
+ul li{
+    background-color: #fff;
+}
+header >a{
+    background-color: #fff;
+}
+img + p{
+    background-color: greenyellow;
+}
