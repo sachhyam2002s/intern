@@ -4,141 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project One</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(144, 216, 216);
-            background-image: url(dumbell.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% auto;
-        }
-        #navbar{
-            height: 30px;
-            display: flex;
-            width: 100%;
-            margin: 0px;
-            padding: 1px;
-            justify-content: space-between;
-            align-items: center;
-            color: rgb(0, 0, 0);
-            background-color: rgb(41, 44, 46);
-            cursor: pointer;
-        }
-        #logo{
-            display: flex;
-            align-items: center;
-            margin: 2px;
-        }
-        #logo img{
-            width: 30px;
-            height: 30px;
-            border-radius: 8px;
-        }
-        #logo > h1{
-            margin-left: 10px;
-        }
-        .nav-items{
-            display: flex;
-            width: 400px;
-            justify-content: space-evenly;
-        }
-        .nav-items a{
-            list-style: none;
-        }
-        .nav-items a:hover{
-            color: rgb(221, 0, 0);
-        }
-        #cart{
-            width: 30px;
-            height: 30px;
-            background-size: cover;
-        }
-        .container{
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        .container .left{
-            width: 30%;
-            position: absolute;
-            color: rgb(137, 137, 147);
-            left: 20px;
-            top: 50px;
-            height: 100%;
-        }
-        .container .left .text{
-            font-size: 50px;
-        }
-        .container .right{
-            position: relative;
-        }
-        .container .right img{
-            width: 80%;
-            height: 100%;
-            object-fit: cover;
-            mix-blend-mode: multiply;
-            align-items: flex-end;
-        }
-        
-     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav id="navbar">
         <div id="logo">
-            <img src="tfc-logo.jpg" alt="logo">
+            <a href="web.html"><img src="tfc-logo.jpg" alt="logo"></a>
             <h1>THE FITNESS COURT</h1>
         </div>
-        <div class="nav-items">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Contact</a>
-            <input type="text" placeholder="Search..">
-        </div>
 
-        <div id="cart">
-            <img src="" alt="cart">
+        <div class="nav-items">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <div class="searchbar">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="cart">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="g-cart.gif" alt="cart"></a>
+            </div>
         </div>
     </nav>
 
     <div class="container">
-        <div class="left">
+        <div class="content">
             <div class="text">
-                <span>LET YOUR</span>
-                <span>BODY</span><br/>
+                <span>LET YOUR</span><br>
+                <span>BODY</span><br>
                 <span class="gradient-text">EXPLORE</span>
             </div>
-            <p>The pain you feel today will be the strength you feel tomorrow.</p><q>-Arnold Schwarzenegger</q>
+            <p>The pain you feel today will be the strength you feel tomorrow.</p>
+            <q>-Arnold Schwarzenegger</q>
             <div class="buttons">
-                <div class="btn btn1">BUY NOW</div>
-                <div class="btn">EXPLORE</div>
+                <a href="#">BUY NOW</a>
+                <a href="#">EXPLORE</a>
             </div>
-            <div id="overview">
-                <div class="overview-item">
-                    <h2>200+</h2>
-                    <h3>Unique Items</h3>
-                </div>
+            <div class="overview-item">
+                <h2>200+</h2>
+                <h3>Unique Items</h3>
             </div>
-            <div id="overview">
-                <div class="overview-item">
-                    <h2>300+</h2>
-                    <h3>Unique Style</h3>
-                </div>
+            <div class="overview-item">
+                <h2>300+</h2>
+                <h3>Unique Style</h3>
             </div>
-            <div id="overview">
-                <div class="overview-item">
-                    <h2>500+</h2>
-                    <h3>Happy Customer</h3>
-                </div>
+            <div class="overview-item">
+                <h2>500+</h2>
+                <h3>Happy Customers</h3>
             </div>
         </div>
-        <!-- <div class="right">
-            <img src="fitness.jpg" alt="background img">
-        </div> -->
     </div>
+
 </body>
 </html>
