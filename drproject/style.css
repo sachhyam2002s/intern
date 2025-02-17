@@ -1,110 +1,137 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
     background-color: rgb(202, 224, 255);
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url(luisha2.png);
+    /* background-image: url(luisha2.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
+    background-blend-mode: multiply; */
 }
 #navbar{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: rgb(22, 22, 22);
-    width: 100%;
-    height: 50px;
+    padding: 15px 10%;
     background: rgb(156, 197, 255);
 }
-#navbar .title{
-    text-align: start;
+#navbar .title h1{
+    font-size: 1.5rem;
 }
 #navbar .nav-list{
-    align-items: center;
+    display: flex;
+    gap: 30px;
 }
 #navbar .nav-list a{
     text-decoration: none;
     color: black;
-    text-align: center;
-    padding: 14px 16px;
+    transition: color 0.3s;
 }
 #navbar .nav-list a:hover{
     color: rgb(178, 88, 178);
 }
 #navbar .appoint button{
-    border-color: rgb(113, 113, 249);
-    border: 1px;
+    border: none;
     border-radius: 50px;
     background-color: rgb(49, 148, 235);
-    align-content: center;
+    padding: 5px 10px;
 }
 #navbar .appoint button a{
-    display: inline-block;
-    padding: 2px 6px;
-    color: rgb(13, 13, 13);
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-family: serif;
 }
 #container{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 100px 10%;
-    
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 10%;
+    width: 100%;
 }
-#container .context .text h1{
-    margin-top: 50px;
-    margin-bottom: 30px;
+.content{
+    max-width: 50%;
+    flex: 1;
 }
-#container .context .text .gradient-text{
+.context .text h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.gradient-text{
     background: linear-gradient(rgb(4, 91, 252),rgb(249, 19, 19));
     background-clip: text;
     color: transparent;
 }
-#container .context .button button{
-    background: rgb(166, 84, 242);
-    border-radius: 10px;
-    border: 5px;
-    padding-top: 2px;
-    margin-top: 10px;
+.context p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
 }
-#container .context .button button a{
+.context .button button{
+    background: rgb(166, 84, 242);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.context .button button a{
     color: rgb(255, 255, 255);
     text-decoration: none;
-    text-align: center;
-    padding: 5px;
     font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
 }
-/* #container .image img{
 
+.image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    padding:20px;
+}
+.image img{
     max-width: 100%;
-    mix-blend-mode: ;
+    mix-blend-mode:multiply;
     height: auto;
-} */
+}
 
 #quote{
-    text-align: right;
     padding: 30px 10%;
+    text-align: center;
 }
 #quote .quote-text{
     font-size: 1.2rem;
     color: black;
-    margin-bottom: 2px;
-    background-color: rgb(230, 231, 231);
-    text-align: center;
-
+    /* margin-bottom: 10px; */
+    background-color: rgb(234, 235, 235);
+    padding: 15px;
+    border-radius: 8px;
 }
 
-@media only screen and(max-width: 600px) {
-    #container .text {}
-    
+@media only screen and(max-width: 400px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    #navbar .nav-list{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    #container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .context{
+        max-width: 100%;
+    }
+    #quote{
+        text-align: center;
+    }
 }
 
