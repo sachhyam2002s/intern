@@ -94,7 +94,7 @@ body{
     padding:20px;
 }
 .image img {
-    max-width: 100%;
+    max-width: 50%;
     mix-blend-mode:multiply;
     height: auto;
 }
