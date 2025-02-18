@@ -6,43 +6,35 @@
 body{
     background-color: rgb(202, 224, 255);
     font-family: sans-serif;
-    /* background-image: url(luisha2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply; */
 }
-#navbar{
+.navbar{
     display: flex;
+    background-color: rgb(156, 197, 255);
     justify-content: space-evenly;
     align-items: center;
-    padding: 15px 10%;
-    background: rgb(156, 197, 255);
+    padding: 15px;
 }
-#navbar .title h1{
-    font-size: 1.5rem;
-}
-#navbar .nav-list{
+.navbar .nav-list{
     display: flex;
     gap: 30px;
 }
-#navbar .nav-list a{
+.nav-list a{
     text-decoration: none;
     color: black;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
-#navbar .nav-list a:hover{
-    color: rgb(178, 88, 178);
+.nav-list a:hover{
+    color: rgb(255, 130, 255);
 }
-#navbar .appoint button{
-    border: none;
+.appoint button{
     border-radius: 50px;
-    background-color: rgb(49, 148, 235);
+    border: none;
+    background: rgb(49, 148, 235);
     padding: 5px 10px;
 }
-#navbar .appoint button a{
-    color: rgb(255, 255, 255);
+.appoint button a{
     text-decoration: none;
+    color: azure;
 }
 #container{
     display: flex;
@@ -106,7 +98,7 @@ body{
 #quote .quote-text{
     font-size: 1.2rem;
     color: black;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     background-color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 8px;
@@ -147,16 +139,14 @@ body{
     border-radius: 8px;
 }
 
-@media only screen and(max-width: 400px) {
-    #navbar {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-    #navbar .nav-list{
+@media screen and(max-width: 600px) {
+    .navbar {
         flex-direction: column;
         gap: 10px;
-        margin-top: 10px;
+        text-align: center;
+    }
+    .nav-list{
+        flex-direction: column;
     }
     #container{
         flex-direction: column;
