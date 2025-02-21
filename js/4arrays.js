@@ -10,6 +10,7 @@ console.log(heroes);
 
 //array indices -- arr[0], arr[2], arr[5]...
 // marks[0] = 28; -- maks changes from 97 to 28.
+//------------------------------------------------------
 
 //looping over an array
 /*
@@ -26,7 +27,17 @@ for(let city of cities){
 }
 */
 
-//------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
+
+//arrays methods
+// Push(): add to end
+// Pop(): delete from end & return
+// toString(): converts array to string
+
+
+
+//--------------------------------------------------------------------------------------------------------------------
+
 
 //##P R A C T I C E
 /*
@@ -39,19 +50,27 @@ for(let value of marks){
 }
 let avg = sum / marks.length
 console.log(`Avg marks of the class = ${avg}`);    
-*/
+
+--------------------------------------------------------------------------------------------------------------------
 
 //for a given array with prices of 5 items > [250, 645, 300, 900,50], all items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
 
 let items = [250, 645, 300, 900,50];
 let i = 0;
-for(let val of items){
-    console.log(`Value of index ${i} = ${val}`);
-    i++;
-}
+// for(let val of items){
+//     let offer = val / 10;
+//     items[i] = items[i] - offer; //items[i] -= offer
+//     console.log(`Value of index ${i} = ${val}`);
+//     console.log(`Value after offer = ${items[i]}`);
+//     i++;
+// }
 
 for(let i=0; i<items.length; i++){
-    
+    let offer = items[i] / 10;
+    items[i] -= offer;
 }
-console.log(items[i]);
+console.log(items);
+*/
+
+//--------------------------------------------------------------------------------------------------------------------
 
