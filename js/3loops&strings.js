@@ -20,7 +20,7 @@ console.log("sum =", sum);
 
 //while loop
 /*
-let i = 1;
+let i = 0;
 while(i<=10){
     console.log("i =", i);
     i++;
@@ -30,7 +30,8 @@ while(i<=10){
 //---------------------------------------------------------------------------
 
 //do while loop
-/*let i = 20;
+/*
+let i = 20;
 do{
     console.log("Hello world");
     i++;
@@ -74,12 +75,12 @@ for (let key in student){
 
 //---------------------------------------------------------------------------------------------------------------
 
-//strings
+//strings -- are immutable(cannot be changed)
 /*
 let str = "Javascript";
 let str2 = 'Typescript';
 console.log(str[0],str[1], str[5]);
-console.log(str2[2],str[4], str[0]);
+console.log(str2[2],str2[4], str2[0]);
 */
 
 //-------------------------------------------------------------------------------------------------
@@ -96,6 +97,8 @@ let obj = {
 let output = `the cost of ${obj.item} is ${obj.price} rupees`; //in this template literals ${} is variable 
 console.log(output);
 console.log("the cost of ", obj.item, "is",obj.price, "rupees");
+
+------------------------------------------------------------------------------------
 
 //escape characters -- \n \t
 console.log("Java\nscript");  // here \n seperates the script from java into the next line
@@ -121,7 +124,7 @@ let str2 = "     Learn      Java Script    "
 console.log(str2.trim()); // removes every spaces at the start and the end
 
 let str3 = "012345678";
-console.log(str3.slice(2, 6)); //breaks the string and returns the requested string 
+console.log(str3.slice(2, 6)); //breaks the string and returns the requested string but does not provide te end request
 
 let str4 = "Java";
 let str5 = "Script";
@@ -134,7 +137,7 @@ let str6 = "hello";
 console.log(str6.replace("lo","p")); //replaces the words 
 
 let str7 = "IlearntJS";
-console.log(str.charAt(2)); //searches the character
+console.log(str7.charAt(8)); //searches the character using the number 
 */
 
 //----------------------------------------------------------------------------------
@@ -162,7 +165,6 @@ while(userNum != gameNum){
     userNum = prompt("You entered wrong number. Guess again:");
 }
 console.log("Congratulations, you guessed the right number.");
-*/
 
 //------------------------------------------------------------------------------------------
 

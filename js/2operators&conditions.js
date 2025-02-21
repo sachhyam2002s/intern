@@ -39,10 +39,13 @@ console.log("a=",a);
 //-------------------------------------------------------------------------
 
 //Assignment operators
-/*let a = 5;
+/*
+let a = 5;
 let b = 2;
 a += 4; //a = a+4
+b -= 5; //b = b-5
 console.log("a =",a);
+console.log("b=",b);
 */
 
 //-------------------------------------------------------------------------
@@ -52,12 +55,13 @@ console.log("a =",a);
 equal to ==              equal to & type ===
 not equal to !=         not equal to & type !==
 --------------------
+
 let a = 5;  //number
 let b = 2; //number
 let c = "5";  //string
 console.log("5==2",a==b); // false
 console.log("5!=2",a!=b); // true
-console.log("5===5",a===c); // true
+console.log("5===5",a===c); // true but if the number is written as a string the result is false
 console.log("5!==5",a!==5); // false
 console.log("5>=5",a>=c); //true
 console.log("5<=2",a<=b); //false
@@ -166,8 +170,8 @@ console.log(result);
 //##P R A C T I C E
 
 // Get user to input a number using prompt ("Enter a number:"). Check if the number is a multiple of 5 or not.
-/*let num = prompt ("Enter a number:");
-
+/*
+let num = prompt ("Enter a number:");
 if (num%5 === 0){
     console.log(num,"is multiple of 5");
 } else{
