@@ -111,7 +111,7 @@ console.log(str.length);
 //---------------------------------------------------------------------------------------------------------------------------------------
 
 //string methods/functions
-/*
+
 let str = "JavaScript";
 str = str.toUpperCase(); //transform every letter of the string to uppercase
 console.log(str);
@@ -138,25 +138,23 @@ console.log(str6.replace("lo","p")); //replaces the words
 
 let str7 = "IlearntJS";
 console.log(str7.charAt(8)); //searches the character using the number 
-*/
 
-//----------------------------------------------------------------------------------
 
-//##P R A C T I C E
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//##P R A C T I C E##
 
 // Print all odd numbers from 0 to 100.
-/*
+
 for (let i=0; i<=100; i++){
     if(i%2 !== 0){
         console.log("i=",i);
     }
 }
-*/
 
-//---------------------------------------------------------------------------------------
 
 // Create a game where you start with any random game number. Ask the user to keep guessing the number until the user enters correct value
-/*
+
 let gameNum = 20;
 
 let userNum = prompt("Guess the game number:");
@@ -166,13 +164,12 @@ while(userNum != gameNum){
 }
 console.log("Congratulations, you guessed the right number.");
 
-//------------------------------------------------------------------------------------------
 
-//prompt the user to enter their full name. Generate a username for them based on the input. Start username with @, followed by their name and ending with the fullname length.
-/* eg: full name = "sachhyamshrestha", username should be "@sachhyamshrestha16"
- 
+// Prompt the user to enter their full name. Generate a username for them based on the input. Start username with @, followed by their name and ending with the fullname length.
+/* 
+eg: full name = "sachhyamshrestha", username should be "@sachhyamshrestha16"
+ */
 let fullName = prompt("Enter your full name without spaces:");
 
 let username = "Your username is @" +fullName + fullName.length;
 console.log(username);
-*/
