@@ -1,6 +1,7 @@
 //array is itself an object, are also mutable(can be changed)
 
-let  marks1= [97, 83, 49, 69, 59, 40];
+let  marks1= [97, 83, 49, 69, 59, 40];     // 1D array
+//let marks2 = [["apple", "orange"], ["cabbage", "spinach"], ["raspberry", "strawberry"]];    // 2D array is used to store array inside array
 console.log(marks1);
 console.log(marks1.length);
 
