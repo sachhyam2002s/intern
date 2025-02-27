@@ -9,7 +9,7 @@ let heroes = ["ironman", "hulk", "captain america", "black widow", "scarlet witc
 console.log(heroes);
 
 //array indices -- arr[0], arr[2], arr[5]...
-// marks[0] = 28; -- maks changes from 97 to 28.
+// marks[0] = 28; -- marks changes from 97 to 28.
 //------------------------------------------------------
 
 //looping over an array
@@ -29,33 +29,31 @@ for(let city of cities){
 //--------------------------------------------------------------------------------------------------------------------
 
 //arrays methods
-// Push(): add to end
 
 let fruits = ['peach', 'apple', 'mango', 'litchi'];
-fruits.push("orange", "watermelon");
+fruits.push("orange", "watermelon");            // Push(): add to end
+fruits.unshift("pineapple");            //unshift(): add to start
 console.log(fruits);
 
-// Pop(): delete from end & return
-
-let deletedItem = fruits.pop();
+let deletedItem = fruits.pop();         // Pop(): delete from end & return
+let deletedItem2 = fruits.shift();             //shift(): deletes fron start
 console.log(fruits);
-console.log("deleted", deletedItem);
+console.log("deleted=", deletedItem);
+console.log("deleted=", deletedItem2);
 
-// toString(): converts array to string
+
 let foods = ['peach', 'apple', 'mango', 'litchi'];
 let price = [90, 50, 66, 87];
 console.log(foods);
-console.log(foods.toString());
-console.log(price.toString());
+console.log(foods.toString());          // toString(): converts array to string
+console.log(price.toString());          // toString(): converts array to string
 
-//concat(): joims ,ultiple arrays and returns the result
+//concat(): joims multiple arrays and returns the result
 let marvel_1 = ["spiderman", "ironman", "black panther", "black widow"];
 let marvel_2 = ["captain america", "antman", "hawkeye", "scarlet witch"];
 let marvel = marvel_1.concat(marvel_2); // multiple concat (marvel_2, marvel_3, ...)
 console.log(marvel);
-
-//unshift(): add to start
-//shift(): deletes fron start
+console.log(marvel.toString());
 
 //slice(): returns a piece of array
 console.log(marvel.slice(1,3)); //prints 1st and 2nd only, not 3rd
@@ -80,16 +78,16 @@ let sum = 0;
 for(let value of marks){
     sum += value;
 }
-let avg = sum / marks.length
+let avg = sum / marks.length;
 console.log(`Avg marks of the class = ${avg}`);    
 
 
 // For a given array with prices of 5 items > [250, 645, 300, 900,50], all items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
 
 let items = [250, 645, 300, 900,50];
-let i = 0;
 /*
 using for of loop
+let i = 0;
 for(let val of items){
     let offer = val / 10;
     items[i] = items[i] - offer; //items[i] -= offer

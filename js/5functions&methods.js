@@ -26,10 +26,10 @@ let val = sumof(16,8);
 console.log(val);
 
 //arrow functions
-
 const arrowSum = (a,b) => {
     console.log(a+b);
 }
+arrowSum(2,4);
 
 //--------------------------------------------------------
 
@@ -45,10 +45,9 @@ arrCity.forEach((val) => {    //using arrow function
 });
 
 //What is higher order function/method?
-//-- Those function that take other fumctions as a parameter or return other function known as HOF/M. for eg. forEach
+//-- Those function that take other functions as a parameter or return other function is known as HOF/M. for eg. forEach
 
 //map method -- arr.map(callbackFnx(value, index, array))
-
 let nums = [2, 4, 6, 8, 1];
 nums.map((val) => {
     console.log(val);
@@ -70,7 +69,7 @@ console.log(output);
 //AND
 let array2 = [6, 8, 7, 1, 2, 3, 4];
 const output2 = array2.reduce((prev, cur) => {
-    return prev > cur ? prev : cur;    //using ternary operator to fing the largest number
+    return prev > cur ? prev : cur;    //using ternary operator to find the largest number
 });
 console.log(output2);
 

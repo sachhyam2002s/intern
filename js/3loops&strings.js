@@ -68,8 +68,8 @@ let student = {
     cgpa: 8.5,
     isPass: true,
 }
-for (let key in student){
-    console.log("key=", key, "value=",student[key]);
+for (let info in student){
+    console.log(info, "value=",student[info]);
 }
 */
 
@@ -129,7 +129,7 @@ console.log(str3.slice(2, 6)); //breaks the string and returns the requested str
 let str4 = "Java";
 let str5 = "Script";
 let result1 = str4.concat(str5); // lets you combine the strings
-let result2 = "I am learning " + str4 + str5;
+let result2 = "I am learning " + result1;  //"I am learning " + str4 + str5
 console.log(result1);
 console.log(result2);
 
@@ -166,10 +166,10 @@ console.log("Congratulations, you guessed the right number.");
 
 
 // Prompt the user to enter their full name. Generate a username for them based on the input. Start username with @, followed by their name and ending with the fullname length.
-/* 
-eg: full name = "sachhyamshrestha", username should be "@sachhyamshrestha16"
- */
+//eg: full name = "sachhyamshrestha", username should be "@sachhyamshrestha16"
+
 let fullName = prompt("Enter your full name without spaces:");
 
 let username = "Your username is @" +fullName + fullName.length;
 console.log(username);
+ 
