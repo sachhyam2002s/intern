@@ -1,5 +1,5 @@
-const accountId = 1234
-let accountEmail = "hello@gmail.com"
+const accountId = 1234      //const cannot be changed
+let accountEmail = "hello@gmail.com"        //let can be changed
 var accountPassword = "1234"
 accountCity = "Patan"
 let accountState;  // ; doesnot matter if used or not 
