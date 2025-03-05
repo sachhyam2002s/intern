@@ -1,3 +1,5 @@
+//to run program at terminal:    'node ./js2/01_variables.js'
+
 const accountId = 1234      //const cannot be changed
 let accountEmail = "hello@gmail.com"        //let can be changed
 var accountPassword = "1234"
