@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(202, 224, 255);
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(156, 197, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+.navbar .nav-list{
+    display: flex;
+    gap: 30px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.nav-list a:hover{
+    color: rgb(255, 130, 255);
+}
+.appoint button{
+    border-radius: 50px;
+    border: none;
+    background: rgb(49, 148, 235);
+    padding: 5px 10px;
+}
+.appoint button a{
+    text-decoration: none;
+    color: azure;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 10%;
+    width: 100%;
+}
+.content{
+    max-width: 50%;
+    flex: 1;
+}
+.context .text h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.gradient-text{
+    background: linear-gradient(rgb(4, 91, 252),rgb(249, 19, 19));
+    background-clip: text;
+    color: transparent;
+}
+.context p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+}
+.context .button button{
+    background: rgb(166, 84, 242);
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.context .button button a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    padding:20px;
+}
+.image img {
+    max-width: 50%;
+    mix-blend-mode:multiply;
+    height: auto;
+}
+
+#quote{
+    padding: 30px 10%;
+    text-align: center;
+}
+#quote .quote-text{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+}
+.section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    max-width: 70%;
+    cursor: pointer;
+}
+.div1:hover,  .div2:hover, .div3:hover, .div4:hover {
+    transform: scale(1.1);
+}
+
+.div1{
+    background: rgb(248, 248, 248);
+    padding: 20px;
+    border-radius: 8px;
+}
+.div2{
+    background: rgb(208, 208, 208);
+    padding: 20px;
+    border-radius: 8px;
+}
+.div3{
+    background: rgb(208, 208, 208);
+    padding: 20px;
+    border-radius: 8px;
+}
+.div4{
+    background: rgb(248, 248, 248);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+@media screen and(max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    #container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .context{
+        max-width: 100%;
+    }
+    #quote{
+        text-align: center;
+    }
+    .section{
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color: bisque;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in html</h1>
+    <form action="" method="get" autocomplete="on">
+        <label for="fname">Enter your First Name:</label>
+        <input type="text" placeholder="first name" name="" id="fname"><br>
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="last name" name="" id="lname"><br>
+        
+        <input type="week" name="" id="">
+        <input type="reset" value="reset">
+
+        <select name="editors" id="" multiple>
+            <option value="vscode">vscode</option>
+            <option value="sublime">sublime</option>
+        </select>
+
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="vscode">vscode</option>
+            <option value="sublime">sublime</option>
+        </datalist>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

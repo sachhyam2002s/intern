@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+            color: rgb(1, 1, 1);
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #747474;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <tr>
+            <th>Country</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>japan@google.com</td>
+            <td>Tokyo</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>china@google.com</td>
+            <td>Beijing</td>
+        </tr>
+        <tr>
+            <td>South Korea</td>
+            <td>skorea@google.com</td>
+            <td>Seol</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th >Country</th>
+            <td >Japan</td>
+            <td>China</td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td>Tokyo</td>
+            <td>Beijing</td>
+        </tr>
+    </table>
+    <!-- colspan merges columns -->
+     <!-- rowspan merges rows -->
+</body>
+</html>

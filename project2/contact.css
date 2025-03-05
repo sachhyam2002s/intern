@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(202, 224, 255);
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(156, 197, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+.navbar .nav-list{
+    display: flex;
+    gap: 30px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.nav-list a:hover{
+    color: rgb(255, 130, 255);
+}
+.appoint button{
+    border-radius: 50px;
+    border: none;
+    background: rgb(49, 148, 235);
+    padding: 5px 10px;
+}
+.appoint button a{
+    text-decoration: none;
+    color: azure;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 30px;
+}
+.context {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+}
+.context h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.context p {
+    font-size: 1.1rem;
+    color: rgb(75, 75, 75);
+    line-height: 1.6;
+}
+.context a {
+    color: rgb(19, 64, 103);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+.form {
+    flex: 1;
+    min-width: 320px;
+    max-width: 450px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease-in-out;
+}
+.form input:focus, .form textarea:focus {
+    border-color: rgb(49, 148, 235);
+    outline: none;
+}
+.form textarea {
+    resize: none;
+    height: 120px;
+}
+.submit {
+    text-align: center;
+    margin-top: 20px;
+}
+.submit input {
+    background: rgb(69, 147, 216);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+.submit input:hover {
+    background: rgb(225, 2, 2);
+}
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+}

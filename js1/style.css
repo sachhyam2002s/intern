@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(249, 216, 166);
+}
+h1#heading{
+    background-color: rgb(147, 147, 255);
+    color: rgb(231, 60, 60);
+}
+.heading{
+    background-color: rgb(194, 114, 194);
+    color: rgb(103, 248, 26);
+}
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(124, 124, 186);
+    border-radius: 8px;
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgb(209, 174, 242);
+}
