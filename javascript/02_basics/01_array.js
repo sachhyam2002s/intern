@@ -1,6 +1,6 @@
-//arrays itself is an object and are always written inside square bracket []
+//arrays itself is an object and are always written inside square bracket [ ]
 //to store multiple items inside a single variable
-const myArr = [1, 2, 3, 4, 5] 
+const myArr = [1, 2, 3, 4, 5]
 console.log(myArr[1]);
 
 //push, pop, unshift and shift
