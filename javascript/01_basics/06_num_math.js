@@ -14,12 +14,13 @@ console.log(hundreds.toLocaleString()); //makes it easier to count the number i.
 
 
 
-
 // ******maths****** //
 
 console.log(Math);  //Math itself is an object with many propertioes
 console.log(Math.abs(-4));  //gives absolute value / changes negative to positive
-console.log(Math.round(4.6));   //rounds up the value '4.6 to 5'
+console.log(Math.round(4.6));   //rounds up the value of '4.6 to 5'
+console.log(Math.floor(4.8));   //
+
 
 console.log(Math.random());   //gives random value from 0-1 only
 console.log((Math.random()*10) + 1);   //math.random gives values from 0-1, when it multiplies by 10 values shift to left but some times 0.322 values are also given. So + 1 is added to it which means the value will be atleast 1, not 0
