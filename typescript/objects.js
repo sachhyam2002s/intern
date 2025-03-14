@@ -1,3 +1,4 @@
+"use strict";
 // const user = {
 //     name: "guts",
 //     email: "guts@ber.serk",
@@ -6,7 +7,7 @@
 // function createUser({name: string, isPaid: boolean}){}
 // let newUser = {name: "guts", isPaid: false, email: "sda@sda.com"}
 // createUser (newUser)
-var myUser = {
+let myUser = {
     _id: "1234",
     name: "dssfd",
     email: "asda@gmsda..com",

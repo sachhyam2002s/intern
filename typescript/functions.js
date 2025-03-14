@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function addTwo(num) {
     return num + 2;
 }
@@ -9,8 +11,7 @@ getUpper("5");
 function signUp(name, age, email, isLoggedIn) {
 }
 signUp("Sasha", 22, "sasa@gmail,com", true);
-var logIn = function (name, age, email, isLoggedIn) {
-    if (isLoggedIn === void 0) { isLoggedIn = true; }
+let logIn = (name, age, email, isLoggedIn = true) => {
 };
 logIn("Eren", 20, "eren@gmail.com");
 function getValue(myVal) {
@@ -19,15 +20,17 @@ function getValue(myVal) {
     }
     return false;
 }
-var hello = function (s) {
+const hello = (s) => {
     return "";
 };
-var heroes = ['ironman', 'spiderman', 'black widow', 'vision'];
-heroes.map(function (hero) {
-    return "hero is ".concat(hero);
+const heroes = ['ironman', 'spiderman', 'black widow', 'vision'];
+heroes.map(hero => {
+    return `hero is ${hero}`;
 });
 function consoleError(errmsg) {
     console.log(errmsg);
 }
+function handleError(errmsg) {
+    throw new Error(errmsg);
+}
 consoleError('There exist an error');
-// export{}

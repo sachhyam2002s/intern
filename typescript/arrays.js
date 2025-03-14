@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var superheroes = [];
-var heropower = [];
+const superheroes = [];
+const heropower = [];
 superheroes.push("spiderman");
 heropower.push(1000);
-var allUsers = [];
+const allUsers = [];
 allUsers.push({ name: "fhjr", isActive: true });
-var MlModels = [
+const MlModels = [
     [255, 255, 255],
     []
 ];

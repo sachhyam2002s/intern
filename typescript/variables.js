@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 //string
-var greetings = "Hello";
+let greetings = "Hello";
 console.log(greetings);
 //number 
-var userId = 2334;
+let userId = 2334;
 //boolean
-var isLoggedin = false;
+let isLoggedin = false;
 //any -- avoid using any 
-var hero;
+let hero;
 function getHero() {
     return "thor";
 }
