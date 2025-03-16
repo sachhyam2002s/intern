@@ -30,7 +30,7 @@ class User {
     }
 
     //getter
-    get getEmail():string{
+    get gEmail():string{
         return `your ${this.email}`
     }
     get courseCount(): number{
@@ -46,6 +46,7 @@ class User {
     }
 }
 const griffith = new User("fetus", "fetus@berserk.com", 2)
+console.log(griffith);
 
 class subUser extends User{
     isFamily: boolean = true

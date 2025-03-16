@@ -29,7 +29,7 @@ class User {
         console.log("Token deleted");
     }
     //getter
-    get getEmail() {
+    get gEmail() {
         return `your ${this.email}`;
     }
     get courseCount() {
@@ -44,6 +44,7 @@ class User {
     }
 }
 const griffith = new User("fetus", "fetus@berserk.com", 2);
+console.log(griffith);
 class subUser extends User {
     constructor() {
         super(...arguments);
