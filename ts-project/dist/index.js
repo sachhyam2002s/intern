@@ -19,7 +19,6 @@ connie.name        //accessing name
 class User {
     constructor(name, email, userId //private poperty
     ) {
-        this.name = name;
         this.email = email;
         this.userId = userId;
         this._courseCount = 1; //is accessible in the assigned class and inherited class
