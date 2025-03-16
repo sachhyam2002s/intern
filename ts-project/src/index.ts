@@ -20,7 +20,7 @@ class User {
     protected _courseCount = 1  //is accessible in the assigned class and inherited class
     readonly address: string = ""   //optional
     constructor (
-        private name: string,
+        name: string,
         public email: string,
         private userId: number  //private poperty
     ){
