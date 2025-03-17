@@ -1,182 +1,186 @@
-        * {
-            margin: 0;
-            padding: 0;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(144, 216, 216);
+    background-image: url("legday.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
-        body {
-            background-color: rgb(144, 216, 216);
-            background-image: url("legday.jpg");
-            background-repeat: no-repeat;
-            background-position: top;
-            background-attachment: fixed;
-            background-size: cover;
-            font-family: sans-serif;
-        }
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(70, 78, 83);
+    color: rgb(248, 248, 248);
+    padding: 1rem;
+    position: relative;
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+#logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+#logo h1 {
+    color: beige;
+    margin-left: 10px;
+}
 
-        #navbar {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            /* background-color: rgb(153, 201, 232); */
-            color: rgb(248, 248, 248);
-            padding: 0 5px;
-            width: 100%;
-            height: 50px;
-        }
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+.nav-items a {
+    color: azure;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+.nav-items a:hover {
+    color: rgb(255, 47, 47);
+}
 
-        #logo {
-            display: flex;
-            align-items: center;
-        }
+.searchbar {
+    display: flex;
+}
 
-        #logo img {
-            width: 30px;
-            height: 30px;
-            border-radius: 8px;
-        }
+.searchbar input[type="text"] {
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    padding: 0.3em;
+}
 
-        #logo h1 {
-            color: beige;
-            margin-left: 10px;
-        }
+.searchbar button {
+    padding: 4px 6px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-left: 6px;
+    border-radius: 50px;
+}
+.cart img {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    mix-blend-mode: color-dodge;
+}
 
-        .nav-items {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+.container .content {
+    width: 50%;
+    position: absolute;
+    color: rgb(173, 173, 253);
+    left: 5rem;
+    top: 45%;
+    transform: translateY(-50%);
+}
+.container .content .text {
+    font-size: 4em;
+    font-weight: bold;
+}
+.container .content .gradient-text {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(255, 255, 0, 1));
+    color: transparent;
+    background-clip: text;
+}
 
-        .nav-items a {
-            color: azure;
-            text-decoration: none;
-            padding: 14px 16px;
-            display: block;
-            text-align: center;
-        }
+.container .content p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
 
-        .nav-items a:hover {
-            color: rgb(255, 47, 47);
-        }
+.container .content .buttons a {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 8px 10px;
+    margin-right: 15px;
+    background-color: rgb(122, 183, 223);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 20px;
+}
 
-        .searchbar {
-            display: flex;
-        }
+.overview-item {
+    margin-top: 20px;
+}
 
-        .searchbar input[type="text"] {
-            font-size: 15px;
-            border: none;
-            border-radius: 4px;
-        }
+.overview-item h2 {
+    font-size: 30px;
+    color: rgb(95, 192, 108);
+}
 
-        .searchbar button {
-            padding: 4px 6px;
-            background: #ffffff;
-            border: none;
-            cursor: pointer;
-            margin-left: 5px;
-            border-radius: 10px;
-        }
+.overview-item h3 {
+    font-size: 18px;
+    color: rgb(125, 226, 226);
+}
 
-        .cart img {
-            width: 30px;
-            height: 30px;
-            border-radius: 5px;
-        }
+@media screen and (max-width: 600px) {
+    .hamburger{
+        display: block;
+    }
+    .nav-items {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+    #menu-toggle:checked + .hamburger + .nav-items {
+        display: flex;
+    }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            height: 90vh;
-        }
+    .nav-items a {
+        padding: 1rem;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
 
-        .container .content {
-            width: 40%;
-            position: absolute;
-            color: rgb(173, 173, 253);
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .container .content .text {
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        .container .content .gradient-text {
-            background: linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(255, 255, 0, 1));
-            color: transparent;
-            background-clip: text;
-        }
-
-        .container .content p {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-        .container .content .buttons a {
-            margin-top: 10px;
-            display: inline-block;
-            padding: 5px 10px;
-            margin-right: 10px;
-            background-color: rgb(122, 183, 223);
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        .overview-item {
-            margin-top: 20px;
-        }
-
-        .overview-item h2 {
-            font-size: 30px;
-            color: rgb(95, 192, 108);
-        }
-
-        .overview-item h3 {
-            font-size: 18px;
-            color: rgb(125, 226, 226);
-        }
-
-        @media screen and (max-width: 600px) {
-            .nav-items {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .nav-items a {
-                width: 100%;
-                text-align: left;
-                padding: 14px;
-            }
-
-            .searchbar {
-                flex-direction: column;
-                width: 100%;
-                margin-top: 10px;
-            }
-
-            .searchbar input[type="text"], .searchbar button {
-                width: 100%;
-                margin-top: 5px;
-            }
-
-            .container {
-                flex-direction: column;
-                height: auto;
-            }
-
-            .container .content {
-                position: static;
-                width: 100%;
-                text-align: center;
-                margin-top: 20px;
-            }
-
-            .container .content .text {
-                font-size: 36px;
-            }
-        }
+    .container .content {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .container .content .text {
+        font-size: 2.5rem;
+    }
+    .searchbar,
+    .cart {
+        margin-top: 10px;
+        width: 100%;
+    }
+    #menu-toggle {
+        display: none;
+    }
+}
