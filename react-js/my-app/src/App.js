@@ -1,19 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './components/About';
+import Navbar from './components/Navbar';
+import Form from './components/TempForm';
+import React, { useState } from 'react';
 
-let name = "Lorem";
+
+
 function App() {
+  const [mode, setMode] = useState('light'); // whether dark mode is enabled or not
+  const toggleMode = () => {
+    if (mode === 'light') {
+      setMode('dark');
+      document.body.style.backgroundColor = 'grey';
+    }else{
+      setMode('light');
+      document.body.style.backgroundColor = 'white';
+    }
+  }
   return (
     <>
-    <nav>
-      <li>home</li>
-      <li>about</li>
-      <li>contact</li>
-    </nav>
-    <div className="container">
-      <h1>Lorem ipsum dolor: {name}</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellat repudiandae praesentium consectetur, illo autem velit magni a ipsum perferendis maxime obcaecati molestiae nam nesciunt numquam architecto modi error in.</p>
-    </div>
+      <Navbar title="App" aboutPage="About app" mode={mode} toggleMode={toggleMode}/>
+      {/* <Navbar /> */}
+      <div className="container my-3">  {/* my-3 refers to margin y-axis 3 gap */}
+        <Form heading="Enter your details" mode={mode}/>
+        <About mode={mode}/>
+      </div>
     </>
   );
 }
