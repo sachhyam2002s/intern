@@ -20,8 +20,7 @@ function App() {
   return (
     <>
       <Navbar title="App" aboutPage="About app" mode={mode} toggleMode={toggleMode}/>
-      {/* <Navbar /> */}
-      <div className="container my-3">  {/* my-3 refers to margin y-axis 3 gap */}
+      <div className="container my-3">  {/* my-3 refers to 'margin y-axis'-3 gap && mx refers to 'margin x-axis'*/}
         <Form heading="Enter your details" mode={mode}/>
         <About mode={mode}/>
       </div>

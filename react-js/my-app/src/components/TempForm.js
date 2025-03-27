@@ -1,8 +1,11 @@
 import React, {useState} from 'react'
 
 
-
 export default function Form(props) {
+    const [count, setCount] = useState(0);
+    const [text, setText] = useState('');
+    //setText("new text");
+
     const handleUpClick = () => {
         // console.log("Converted to Upper Case");
         let newtext = text.toUpperCase();
@@ -27,10 +30,6 @@ export default function Form(props) {
         setText(newText.join(" "))
     }
     
-    const [count, setCount] = useState(0);
-    const [text, setText] = useState('Enter text here');
-    //setText("new text");
-
     return (
         <>
         <div className='container' style={{color: props.mode==='dark'?'white':'black'}}>
