@@ -4,12 +4,12 @@ import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import Form from './components/TempForm';
 import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  // Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   // Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -48,18 +48,20 @@ function App() {
 
   return (
     <>
-    <Router>
+    {/* <Router> */}
       <Navbar title="App" aboutPage="About app" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
 
       <div className="container my-3">  {/* my-3 refers to 'margin y-axis'-3 gap && mx refers to 'margin x-axis'*/}
-        <Routes>
+        {/* <Routes> */}
           {/* use exact so that the code selects the exact path and the website doesnot render */}
-          <Route exact path="/about" element = {<About mode={mode}/>}/>
-          <Route exact path="/form" element = {<Form showAlert={showAlert} heading="Enter your details" mode={mode}/>}/>
-        </Routes>
+          {/* <Route exact path="/about" element = {<About mode={mode}/>}/>
+          <Route exact path="/form" element = {<Form showAlert={showAlert} heading="Enter your details" mode={mode}/>}/> */}
+        {/* </Routes> */}
+        <About mode={mode}/>
+        <Form showAlert={showAlert} heading="Enter your details" mode={mode}/>
       </div>
-    </Router>
+    {/* </Router> */}
     </>
   );
 }
