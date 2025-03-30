@@ -10,16 +10,19 @@ export default function Form(props) {
         // console.log("Converted to Upper Case");
         let newtext = text.toUpperCase();
         setText(newtext)
+        props.showAlert("Converted to upper case","success")
     }
     const handleLowClick = () => {
         // console.log("Converted to Lower Case");
         let newtext = text.toLowerCase();
         setText(newtext)
+        props.showAlert("Converted to lower case","success")
     }
     const handleClearClick = () => {
         // console.log("Cleared the message box");
         let newtext = ' ';
         setText(newtext)
+        props.showAlert("Messages cleared","success")
     }
     const handleOnChange = (event) => {
         // console.log("On change");
@@ -28,6 +31,7 @@ export default function Form(props) {
     const handleExtraSpaces = () => {
         let newText = text.split(/[  ]+/);
         setText(newText.join(" "))
+        props.showAlert("Removed extra spaces","success")
     }
     
     return (
@@ -55,8 +59,8 @@ export default function Form(props) {
             {/* mx-2 is to create distancing betweent the buttons */}
             <button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to Uppercase</button>
             <button className="btn btn-primary mx-1" onClick={handleLowClick}>Convert to Lowercase</button>
-            <button className="btn btn-primary mx-1" onClick={handleClearClick}>Clear Text</button>
-            <button className="btn btn-primary mx-1" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
+            <button className="btn btn-outline-primary mx-1" onClick={handleClearClick}>Clear Text</button>
+            <button className="btn btn-outline-primary mx-1" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
         </div>
         <div className="container my-5" style={{color: props.mode==='dark'?'white':'black'}}>    {/* my-2 is for distancing betwee the containers */}
             <div>
