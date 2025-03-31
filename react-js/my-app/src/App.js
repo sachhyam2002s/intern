@@ -49,7 +49,7 @@ function App() {
   return (
     <>
     {/* <Router> */}
-      <Navbar title="App" aboutPage="About app" mode={mode} toggleMode={toggleMode}/>
+      <Navbar title="App" aboutPage="About" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
 
       <div className="container my-3">  {/* my-3 refers to 'margin y-axis'-3 gap && mx refers to 'margin x-axis'*/}
