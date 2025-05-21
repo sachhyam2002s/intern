@@ -28,7 +28,8 @@ console.log((Math.random()*10) + 1);   //math.random gives values from 0-1, when
 const min = 10
 const max = 20
 
-console.log(Math.floor(Math.random() * (max - min + 1)) + min)  //max-min means to get the range between the assigned numbers and +1 is added to avoid the 0 case and again min is added to get atleast the minimum value which is 10, not less 
+console.log(Math.floor(Math.random() * (max - min + 1)) 
++ min)  //max-min means to get the range between the assigned numbers and +1 is added to avoid the 0 case and again min is added to get atleast the minimum value which is 10, not less 
 
 
 

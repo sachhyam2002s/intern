@@ -1,7 +1,7 @@
 // ******dates****** //
-
+let date = new Date()
 let myDate = new Date()
-console.log(myDate.toString()); //shows day, date, time, and time zone
+console.log(date.toString()); //shows day, date, time, and time zone
 console.log(myDate.toDateString()); //shows day and date
 console.log(myDate.toLocaleString());   //shows date and time
 console.log(typeof myDate); //shows the datatype of myDate

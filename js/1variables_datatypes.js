@@ -1,4 +1,3 @@
-//console.log(""); prints the message/input.
 console.log("Welcome to js practise.");
 console.log("Javascript is a programmng language.");
 
@@ -10,7 +9,7 @@ let x = null;
 let y = undefined;
 let isFollowing = false;
 let isNotFollowing = true;
-console.log(fullName); //not to use "" so that the console can print the input 
+console.log(fullName);
 console.log(age);
 console.log(pi);
 console.log(price);
@@ -19,9 +18,6 @@ console.log(y);
 console.log(isFollowing);
 console.log(isNotFollowing);
  
-//let, const, var keywords to declare variables
-//do not use var, use let and const 
-//'let' allows you to update the values whereas 'const' fixes the value, so that the value cannot be changed
  
 const a = 5;
 console.log(a);

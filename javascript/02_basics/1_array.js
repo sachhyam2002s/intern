@@ -1,7 +1,7 @@
 //arrays itself is an object and are always written inside square bracket [ ]
 //to store multiple items inside a single variable
 const myArr = [1, 2, 3, 4, 5]
-console.log(myArr[1]);
+console.log(myArr[4]);
 
 //push, pop, unshift and shift
 myArr.push(6, 7)       //adds value at end of array
