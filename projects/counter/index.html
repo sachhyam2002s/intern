@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .counter{
+            background: rgb(118, 118, 238);
+            padding: 10px;
+            border-radius: 10%;
+        }
+        h1{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        #count{
+            margin-left: 1rem;
+        }
+        button{
+            background: red;
+            color: aliceblue;
+            border: none;
+            border-radius: 50%;
+            margin: 5px;
+            font-size: 16px;
+            padding: 8px;
+        }
+        button:hover{
+            background-color: rgb(225, 126, 108);
+        }
+    </style>
+</head>
+<body>
+    <div class="counter">
+        <h1>Count: <div id="count">0</div></h1>
+        <button onclick="increase()">Increase</button>
+        <button onclick="decrease()">Decrease</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>
